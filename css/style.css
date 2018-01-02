@@ -2,7 +2,7 @@
 /* SOOOOOO COOOOOOOOOOOOL */
 /* Dawson Richey was here */
 
-.blockquote-reverse, blockquote.pull-right {
+.blockquote-reverse, .pull-right {
     padding-right: 15px;
     padding-left: 0;
     text-align: right;
@@ -12,4 +12,10 @@
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 16px;
+    border-left: 5px solid #eee;
+    line-height: 2;
+}
