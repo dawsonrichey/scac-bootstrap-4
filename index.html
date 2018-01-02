@@ -92,7 +92,7 @@
 
 <!- Events Start no bkg color->
     <div class="container">
-        <div class="row p-2 mt-4 text-center">
+        <div class="row p-2 my-4 text-center">
             <div class="col bg-danger pb-4"> <i class="fa fa-calendar icon fa-4x m-4"></i>
                 <h3>Events</h3>
                 <p class="m-1  pb-2 text-justify">Follow us on Facebook and Twitter to get the most up to date information about our mettings and special events. </p><a style="margin-right:20px;" href="https://www.facebook.com/ScottCountyArtsCouncil" target="_blank" id="fblink" class="learn-more">Facebook</a><a href="https://www.twitter.com/scottcountyarts" target="_blank" class="learn-more" style="">Twitter</a>
@@ -109,24 +109,74 @@
 
 <!- Contact Start ->
     <div class="container-fluid bg-info">
-        <div class="row text-center p-3 m-4">
-            <div class="col-12 bg-light mb-2 text-center">Contact</div>
-            <div class="col bg-danger">1</div>
-            <div class="col bg-warning">2</div>
-            <div class="col bg-dark text-light">3</div>
+        <div class="row text-center p-3">
+            <div class="col bg-danger text-left">
+                <h2 class="text-center mt-4">Send Us A Message </h2>
+                <hr style="color:#fff;padding:2px;">
+                <!--Main form-->
+                    <form method="post" action="https://www.scottcountyartscouncil.org/mail.php" name="contactform" id="contactform" autocomplete="on" class="m-4">
+                    <fieldset>
+
+                        <div>
+                            <label class="contactLabel"><strong>Name</strong></label>
+                            <input name="name" type="text" id="name" required="yes" class="col-12 mb-3">
+                        </div>
+
+                        <div>
+                            <label class="contactLabel"><strong>E-mail</strong></label>
+                            <input name="email" type="email" id="email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="yes" class="col-12 mb-3">
+                        </div>
+
+                        <div>
+                            <label class="contactLabel"><strong>Subject</strong></label>
+                            <input name="subject" type="text" id="subject" required="no" class="col-12 mb-3">
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <div>
+                            <label class="contactLabel"><strong>Your Message</strong></label> 
+                            <textarea name="comments" cols="40" rows="3" id="comments" required="yes" class="col-12 mb-3"></textarea> 
+                        </div>
+
+                    </fieldset>
+
+                    <input type="submit" class="submit btn-dark" style="text-transform: uppercase;" id="submit" value="Send message">
+
+                </form>
+                <!--END Main form-->
+                
+    
+            </div>
+            <div class="col bg-warning text-left">
+                <h2 class="text-center mt-4">Contact</h2>
+                    <div class="m-4">
+                    <hr style="color:#fff;">
+                        <div class="m-4">
+                        <p><strong>Email:</strong> <a href="mailto:artscouncilscottcounty@gmail.com">ArtsCouncilScottCounty@gmail.com</a></p>
+                        <p><strong>Facebook</strong>: <a href="https://www.facebook.com/ScottCountyArtsCouncil" target="_blank">ScottCountyArtsCouncil</a></p>
+                        <p><strong>Twitter:</strong> <a href="https://twitter.com/scottcountyarts" target="_blank">ScottCountyArts</a></p>
+                        <p><strong>Address: </strong>P.O. Box 29 Scottsburg, IN 47470</p>
+                        <p><strong>Meetings: </strong>Scott County Museum &amp; Heritage Center</p>
+                         </div>
+                        <iframe allowfullscreen="" frameborder="0" width="100%" height="200px" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDa1VwsMykSBVxghwkCOimNt8TO-oFeR-g&amp;q=1050+S+Main+St%2C+Scottsburg%2C+IN+47170&amp;zoom=10" class="overlay" style="pointer-events:none; padding-bottom:10px;"></iframe>
+                </div>
+            </div>
         </div>
     </div>
 <!- Contact End ->
 
-<!- Footer Start no bkg color->
-    <div class="container-fluid">
-        <div class="row p-2 text-center">
-            <!-- <div class="col-12 bg-light mb-2 text-center">Footer</div> -->
-            <div class="col bg-danger text-left">Scott Country Arts Council Copy Right 2018.</div>
+<!- Footer Start ->
+    <div class="container-fluid bg-dark pt-0 mt-0">
+        <div class="row text-center p-3">
+            <div class="col bg-dark text-light text-left">Scott Country Arts Council Copy Right 2018.</div>
             <div class="col bg-dark text-light text-right">Designed by <a href="www.dawsonrichey.com" target="_new">Dawson Richey</a></div>
         </div>
     </div>
 <!- Footer End ->
+
+
 
 <!--
 <!- Carousel Start 
@@ -180,6 +230,7 @@
     </div>
 <!- Footer End ->
 -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
